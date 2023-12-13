@@ -1,0 +1,696 @@
+<!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
+<!--  Last Published: Thu Aug 10 2023 11:19:25 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="63dc10fc8a7ef29fff814333" data-wf-site="63dc10fc8a7ef25cc2814332">
+<head>
+  <meta charset="utf-8">
+  <title>Oceanarium</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/oceanarium.webflow.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic","Sora:regular,500,600,700,800","Sora:300,regular"]  }});</script>
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon">
+  <link async="" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@finsweet/3dglobes@1/styles.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <!-- background gradient animation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+</head>
+<body>
+  <div data-animation="default" class="navbar w-nav" data-easing2="ease" data-easing="ease" data-collapse="medium" style="opacity:0;-webkit-transform:translate3d(0, -8vw, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, -8vw, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, -8vw, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, -8vw, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" data-w-id="ae360faf-9c24-3374-b332-ada9d73cc37d" role="banner" data-duration="400">
+    <div class="container menu">
+      <div class="nav-menu-wrapper">
+        <a href="#" class="logo w-nav-brand"><img src="images/oceanarium-logo-white-1.svg" loading="lazy" alt="logo"></a>
+        <nav role="navigation" class="nav-menu w-nav-menu">
+          <div class="nav-links">
+            <a href="#about" class="link slide-in-bottom w-inline-block">
+              <div data-hover="ABOUT">ABOUT</div>
+              <div class="custom-styles w-embed">
+                <style>
+.slide-in-bottom  {
+	overflow: hidden;
+	padding: 0 4px;
+	height: 1em;
+}
+.slide-in-bottom div {
+	position: relative;
+	display: inline-block;
+	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+	transition: transform 0.3s;
+}
+.slide-in-bottom div::before {
+	position: absolute;
+	top: 100%;
+	content: attr(data-hover);
+	font-weight: 400;
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+.slide-in-bottom:hover div,
+.slide-in-bottom:focus div {
+	-webkit-transform: translateY(-100%);
+	-moz-transform: translateY(-100%);
+	transform: translateY(-100%);
+}
+</style>
+              </div>
+            </a>
+            <a href="#activities" class="link slide-in-bottom w-inline-block">
+              <div data-hover="ACTIVITIES">ACTIVITIES</div>
+            </a>
+            <a href="#sea-creatures" class="link slide-in-bottom w-inline-block">
+              <div data-hover="SEA CREATURES">SEA CREATURES</div>
+            </a>
+            <a href="#conservation" class="link slide-in-bottom w-inline-block">
+              <div data-hover="CONSERVATION">CONSERVATION</div>
+            </a>
+            <a href="#contact" class="link slide-in-bottom w-inline-block">
+              <div data-hover="CONTACTS">CONTACTS</div>
+            </a>
+          </div>
+        </nav>
+        <div class="menu-button w-nav-button">
+          <div class="menu-hr first"></div>
+          <div class="menu-hr second"></div>
+          <div class="menu-hr thrid"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="gradient" class="gradient"></div>
+  <div class="gradient-overlay"></div>
+  <div class="hero">
+    <a href="#about" data-w-id="31ca63c4-1dc6-9095-6698-7452ef7358fd" style="-webkit-transform:translate3d(0, -200%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, -200%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, -200%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, -200%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="hero-cta w-inline-block"><img src="images/arrow-gradient-1.svg" loading="lazy" style="-webkit-transform:translate3d(0, -10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, -10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, -10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, -10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" data-w-id="33761814-45bb-2255-b42b-02c4e8ad6256" alt="arrow" class="dive-depper-arrow">
+      <p class="hero-cta-p">Dive<br>Deeper</p><img src="images/dive-deeper-sphere.svg" loading="lazy" alt="semi-circle" class="dive-deeper-img">
+    </a>
+    <div class="padding-global">
+      <div class="container">
+        <div class="align-center">
+          <p data-w-id="8a0bb3f1-7525-06f4-a321-ca0f5706530f" style="-webkit-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="section-tag">OCEANARIUM Milwaukee</p>
+          <h1 data-w-id="2d23b894-9ff5-c292-e6df-15154f526df2" style="-webkit-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="heading">Come face to face with hundreds of awesome creatures.</h1>
+          <div class="max-width">
+            <p data-w-id="3c6290b0-f2a6-a0cd-0fb6-200291a42af9" style="-webkit-transform:translate3d(0, -60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, -60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, -60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, -60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0">0ne of the largest and most impressive oceanariums in the world.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="about">
+    <div class="padding-global">
+      <div class="container">
+        <div class="about-content">
+          <div id="about" class="about-els">
+            <div id="w-node-_4bdde964-73fd-b7d0-5424-7e6e55ba4280-ff814333" class="about-text">
+              <div class="move-up">
+                <p data-a-split="line" class="section-tag">Get to know us</p>
+              </div>
+              <div class="move-up">
+                <h1 data-a-split="line" data-w-id="fa65a3ca-7e61-57e9-d2d3-e10c5a7f8975">Oceanarium  Milwaukee</h1>
+              </div>
+              <div class="move-up">
+                <p data-a-split="line">We are one of the largest saltwater aquariums in the world for fish and other marine life.</p>
+              </div>
+            </div>
+            <div id="w-node-ef5f0e21-d3dd-5a1b-464a-4cae7622b391-ff814333" class="about-el _1">
+              <div class="about-el-img-wrapper move-up"><img src="images/conservation.svg" loading="lazy" alt="Supporting icon" class="about-el-img"></div>
+              <div class="move-up">
+                <p>Supporting ocean&#x27;s conservation <br>since 1984</p>
+              </div>
+            </div>
+            <div id="w-node-d168803b-7eab-2f6d-7d02-05845c5803a6-ff814333" class="about-el center">
+              <div class="about-el-img-wrapper move-up"><img src="images/fish.svg" loading="lazy" alt="Fish icon" class="about-el-img"></div>
+              <div class="move-up">
+                <p>Home to<br>more than 16.000 Sea Creatures</p>
+              </div>
+            </div>
+            <div id="w-node-e4c02330-cb0c-59e1-b177-070b78d8339e-ff814333" class="about-el _3">
+              <div class="about-el-img-wrapper move-up"><img src="images/brain.svg" loading="lazy" alt="Education icon" class="about-el-img"></div>
+              <div class="move-up">
+                <p>Educational <br>programmes for<br>Ocean literacy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="activities">
+    <div class="padding-global">
+      <div class="container">
+        <div class="heading-wrapper move-up">
+          <h2>activities for every one</h2>
+          <div class="section-hr"></div>
+        </div>
+        <div id="activities-swiper" class="swiper">
+          <div id="activities" class="swiper-wrapper move-up">
+            <div class="swiper-slide activities-slide"><img src="images/guided-tour.webp" loading="lazy" sizes="(max-width: 479px) 74vw, (max-width: 767px) 64vw, (max-width: 991px) 39vw, 27vw" srcset="images/guided-tour-p-500.jpg 500w, images/guided-tour.webp 600w" alt="Guided tour" class="slider-img">
+              <div class="slider-text">
+                <h3>Guided tours</h3>
+                <p>Exhibitions are powerful educational tools that help develop a passion for learning and encourage people to respect the oceans.</p>
+              </div>
+              <div class="slider-filter"><img src="images/arrow-white.svg" loading="lazy" alt="arrow" class="slider-arrow"></div>
+            </div>
+            <div data-w-id="86dd8690-0636-f81e-c4f6-3c5351be5118" class="swiper-slide activities-slide"><img src="images/sleeping-with-sharks.webp" loading="lazy" sizes="(max-width: 479px) 74vw, (max-width: 767px) 64vw, (max-width: 991px) 39vw, 27vw" srcset="images/sleeping-with-sharks-p-500.jpeg 500w, images/sleeping-with-sharks-p-800.jpeg 800w, images/sleeping-with-sharks.webp 996w" alt="Kids sleeping with sharks" class="slider-img">
+              <div class="slider-text">
+                <h3>Sleeping with sharks</h3>
+                <p>Who’d have thought sharks would make good sleeping buddies? That’s what anyone who’s brave enough to spend a night at the Oceanário will say!</p>
+              </div>
+              <div class="slider-filter"><img src="images/arrow-white.svg" loading="lazy" alt="arrow" class="slider-arrow"></div>
+            </div>
+            <div class="swiper-slide activities-slide"><img src="images/family.webp" loading="lazy" alt="Family in oceanarium" class="slider-img">
+              <div class="slider-text">
+                <h3>Oceans for all ages</h3>
+                <p>Who’s said “things were different back in the day”? We cannot allow ourselves to get stuck in the past!</p>
+              </div>
+              <div class="slider-filter"><img src="images/arrow-white.svg" loading="lazy" alt="arrow" class="slider-arrow"></div>
+            </div>
+            <div class="swiper-slide activities-slide"><img src="images/birthdays.webp" loading="lazy" alt="Birthday parties at our oceanarium" class="slider-img">
+              <div class="slider-text">
+                <h3>Birthday parties</h3>
+                <p>Control tower here. Everything ready? Have you got the cake, the snacks and the present? The biologists are ready, with their feet in the water.</p>
+              </div>
+              <div class="slider-filter"><img src="images/arrow-white.svg" loading="lazy" alt="arrow" class="slider-arrow"></div>
+            </div>
+          </div>
+          <div class="swiper-scrollbar">
+            <div class="swiper-scrollbar-drag"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="performance" class="performance">
+    <div class="padding-global">
+      <div class="container">
+        <div class="numbers-wrapper _1">
+          <div class="number-wrapper-heading">
+            <p class="display-text">+450</p>
+            <p class="number-wrapper-heading-small">Species</p>
+          </div>
+          <div class="numbers-text">
+            <h3>Come meet our species</h3>
+            <p>About 460 species from around the world are kept in our oceanarium and include: sharks, rays, chimaeras, various species of tuna, barracudas, groupers and jellyfishes.</p>
+          </div>
+          <div class="number-hr"></div>
+        </div>
+        <div class="numbers-wrapper _2">
+          <div class="number-wrapper-heading">
+            <p class="display-text">+16,000</p>
+            <p class="number-wrapper-heading-small">Sea Creatures</p>
+          </div>
+          <div class="numbers-text">
+            <h3>Get to know all the species inside our aquarium</h3>
+            <p>Our Aquarium features over 15600 water-dwelling animals and plants from over 550 different species.<br></p>
+          </div>
+          <div class="number-hr"></div>
+        </div>
+        <div class="numbers-wrapper _1">
+          <div class="number-wrapper-heading">
+            <p class="display-text">33</p>
+            <p class="number-wrapper-heading-small">Aquariums</p>
+          </div>
+          <div class="numbers-text">
+            <h3>diverse aquariums</h3>
+            <p> Almost 9 million gallons of water divided my 33 aquarium in the biggest Oceanarium of the country.</p>
+          </div>
+          <div class="number-hr"></div>
+        </div>
+        <div class="numbers-wrapper _2">
+          <div class="number-wrapper-heading">
+            <p class="display-text">+5,000 </p>
+            <p class="number-wrapper-heading-small">m3</p>
+          </div>
+          <div class="numbers-text">
+            <h3>One of the biggests Aquariums in the world</h3>
+            <p>Filled with almost 9 million gallons of water.</p>
+          </div>
+          <div class="number-hr"></div>
+        </div>
+        <div class="numbers-wrapper _1">
+          <div class="number-wrapper-heading">
+            <p class="display-text">+11</p>
+            <p class="number-wrapper-heading-small">Years</p>
+          </div>
+          <div class="numbers-text">
+            <h3>open August 23, 2023</h3>
+            <p>The Oceanarium Milwaukee opened in 2012 on August 23rd and, as originally planned for 2 years, remains open today.</p>
+          </div>
+          <div class="number-hr"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="species">
+    <div class="padding-global">
+      <div class="container">
+        <div id="species" class="species-swiper move-up">
+          <div class="swiper-pagination move-up">
+            <div class="swiper-pagination-bullet">
+              <p>Starry Smooth-Hound Shark</p>
+            </div>
+            <div class="swiper-pagination-bullet-active">
+              <p>Starry Smooth</p>
+            </div>
+            <div class="swiper-pagination-bullet">
+              <p>Starry Smooth</p>
+            </div>
+            <div class="swiper-pagination-bullet">
+              <p>Starry Smooth-Hound Shark</p>
+            </div>
+            <div class="swiper-pagination-bullet">
+              <p>Starry Smooth-Hound Shark</p>
+            </div>
+          </div>
+          <div class="swiper-wrapper species">
+            <div id="sea-creatures" class="swiper-slide species-slide"><img src="images/Ocellated-Eagle-Ray.webp" loading="lazy" sizes="(max-width: 479px) 93vw, (max-width: 767px) 74vw, (max-width: 991px) 48vw, 40vw" srcset="images/Ocellated-Eagle-Ray-p-500.png 500w, images/Ocellated-Eagle-Ray-p-800.png 800w, images/Ocellated-Eagle-Ray.webp 943w" alt="Gaint Manta Ray" class="species-slide-img">
+              <div class="swiper-slide-specie">
+                <p class="section-tag">STARS OF THE OCEAN</p>
+                <h2>Gaint Manta Ray</h2>
+                <p>A tireless traveller, the manta ray is an iconic open sea species. Its beauty is captivating. It lives close to the surface, at depths of between 0 and 1000 metres. Its distribution is very localised on reefs.</p>
+              </div>
+            </div>
+            <div class="swiper-slide species-slide"><img src="images/rough-toothed-dolphin-1.webp" loading="lazy" alt="Rough-Toothed Dolphin" class="species-slide-img">
+              <div class="swiper-slide-specie">
+                <p class="section-tag">STARS OF THE OCEAN</p>
+                <h2>Rough-toothed Dolphin</h2>
+                <p>Unusual looking dolphins as their overall appearance is quite primitive, a bit like a prehistoric dolphin. </p>
+              </div>
+            </div>
+            <div class="swiper-slide species-slide"><img src="images/mustelus-asterias.webp" loading="lazy" sizes="(max-width: 479px) 93vw, (max-width: 767px) 89vw, (max-width: 991px) 37vw, 32vw" srcset="images/mustelus-asterias-p-500.png 500w, images/mustelus-asterias.webp 618w" alt="Starry Smooth-Hound Shark" class="species-slide-img _1">
+              <div class="swiper-slide-specie">
+                <p class="section-tag">STARS OF THE OCEAN</p>
+                <h2>starry smooth-hound shark</h2>
+                <p>The starry smooth-hound shark is a grey shark with white dots on its back. It has a more flexible body than other sharks.</p>
+              </div>
+            </div>
+            <div class="swiper-slide species-slide"><img src="images/florida-manatee.webp" loading="lazy" alt="Florida Manatee" class="species-slide-img">
+              <div class="swiper-slide-specie">
+                <p class="section-tag">STARS OF THE OCEAN</p>
+                <h2>Florida manatee</h2>
+                <p>A subspecies of the West Indian manatee, is a large, slow-moving marine mammal with an elongated, round body and paddle-shaped flippers and tail.</p>
+              </div>
+            </div>
+            <div class="swiper-slide species-slide"><img src="images/jellyfish.png" loading="lazy" sizes="(max-width: 479px) 93vw, (max-width: 767px) 74vw, (max-width: 991px) 46vw, 40vw" srcset="images/jellyfish-p-500.png 500w, images/jellyfish.png 617w" alt="Moon Jellyfish" class="species-slide-img">
+              <div class="swiper-slide-specie">
+                <p class="section-tag">STARS OF THE OCEAN</p>
+                <h2>Moon jellyfish</h2>
+                <p>Around the size of a plate, it is recognisable by the four circles visible through the translucent white bell. These four circles are gonads, the reproductive organs located at the bottom of the stomach, and they are normally purple in colour.</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-scrollbar">
+            <div class="swiper-scrollbar-drag"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="conservation">
+    <div class="padding-global">
+      <div class="container">
+        <div id="conservation" class="global">
+          <div class="globe-wrapper">
+            <div fs-3dglobe-img="https://uploads-ssl.webflow.com/6050d670ff268e86e669416f/606e04fa32f36e517e87bb93_globe-texture-3.jpg" fs-3dglobe-element="container" class="fs-globe-container">
+              <div class="globe-outer-graphic-large"></div>
+              <div class="globe-outer-graphic-small"></div>
+              <div class="graphic-circle-3"></div>
+              <div class="graphic-circle-4"></div>
+              <div class="graphic-circle-5"></div>
+              <div class="graphic-circle-6"></div>
+            </div>
+          </div>
+          <div class="globe-text-wrapper">
+            <div class="max-width">
+              <div class="move-up">
+                <p class="section-tag">conservation</p>
+                <h2>supporting Over 30 Ocean Conversation projects around the world</h2>
+              </div>
+              <div class="move-up">
+                <p>We support science-based ocean conservation projects that span the globe with various partners, and cover a myriad of issues, topics, and conservation initiatives.<br></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="faqs">
+    <div class="padding-global">
+      <div class="container">
+        <div class="w-layout-grid faq6_component">
+          <div class="faq6_content">
+            <div class="move-up">
+              <p class="section-tag">FAQS</p>
+              <div class="margin-bottom margin-small">
+                <h2>The most common doubts<br></h2>
+              </div>
+            </div>
+            <div class="move-up">
+              <p>Can&#x27;t find the answer to your question in this list? please do not hesitate to contact us we are here to answer all your questions.<br></p>
+            </div>
+          </div>
+          <div class="faq6_list">
+            <div class="w-layout-grid faq6_list-grid">
+              <div class="faq6_accordion move-up">
+                <div data-w-id="c78a041c-f93c-be3c-a901-c24768279611" class="faqs-open">
+                  <h3>What are your opening hours?</h3><img src="images/arrow-white.svg" loading="lazy" alt="arrow" class="faq6_icon">
+                  <div class="hr-container faqs">
+                    <div class="hr faqs"></div>
+                  </div>
+                </div>
+                <div style="width:100%;height:0px" class="faq6_answer">
+                  <div class="margin-bottom margin-small">
+                    <div class="max-width-large">
+                      <p>Open from 10 a.m. to 8 p.m.<br>Last entry 7 p.m.<br><br>- December 24th from 10 a.m to 7 p.m, last entrance at 6 p.m<br>- December 25th from 11 a.m to 8 p.m, last entrance at 7 p.m <br>- December 31st from 10 a.m to 7 p.m, last entrance at 6 p.m <br>- January 1st from 11 a.m to 8 p.m, last entrance at 7 p.m </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="faq6_accordion move-up">
+                <div data-w-id="555a084c-f217-99e7-deb8-ad2082adf3fc" class="faqs-open">
+                  <h3>How can I get to the Oceanarium Bournemouth?</h3><img src="images/arrow-white.svg" loading="lazy" alt="arrow" class="faq6_icon">
+                  <div class="hr-container faqs">
+                    <div class="hr faqs"></div>
+                  </div>
+                </div>
+                <div style="width:100%;height:0px" class="faq6_answer">
+                  <div class="margin-bottom margin-small">
+                    <div class="max-width-large">
+                      <p><strong>Oceanarium Bournemouth </strong>is located at Docas of Bournemouth, near Bournemouth Park. This area is served by several transport networks. The Oriente (East) Station is a central hub for all transport networks that serve the East Bournemouth area, namely the Underground and bus networks, as well as the Nasfic line (Ruantu and Lipsi) and the Northern line (trains). A Taxi rank is also located near the station.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="faq6_accordion move-up">
+                <div data-w-id="6592bfbf-bec1-323a-7cf3-47c142c20945" class="faqs-open">
+                  <h3>Do sharks eat the other fish housed in the main aquarium?</h3><img src="images/arrow-white.svg" loading="lazy" alt="arrow" class="faq6_icon">
+                  <div class="hr-container faqs">
+                    <div class="hr faqs"></div>
+                  </div>
+                </div>
+                <div style="width:100%;height:0px" class="faq6_answer">
+                  <div class="margin-bottom margin-small">
+                    <div class="max-width-large">
+                      <p>Despite being predatory animals, sharks do not usually prey on other fish when in captivity, as they are well fed. Therefore, attacks on other fish are rare.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="faq6_accordion move-up">
+                <div data-w-id="431c8a79-acc1-c8ef-abf5-3d5470d87182" class="faqs-open">
+                  <h3>Where does the water used to fill the aquariums come from?</h3><img src="images/arrow-white.svg" loading="lazy" alt="arrow" class="faq6_icon">
+                  <div class="hr-container faqs">
+                    <div class="hr faqs"></div>
+                  </div>
+                </div>
+                <div style="width:100%;height:0px" class="faq6_answer">
+                  <div class="margin-bottom margin-small">
+                    <div class="max-width-large">
+                      <p>The Oceanarium uses water from the water supply network, to which the required amount of salt is added. We import salt from the Red Sea (Israel), as its chemical properties are essential to ensuring the quality of our seawater.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="faq6_accordion move-up">
+                <div data-w-id="a503c6ce-c2df-e14e-d3ad-66fe7c26edb3" class="faqs-open">
+                  <h3>I have booked a disabled ticket, how do I claim my free carer?</h3><img src="images/arrow-white.svg" loading="lazy" alt="arrow" class="faq6_icon">
+                  <div class="hr-container faqs">
+                    <div class="hr faqs"></div>
+                  </div>
+                </div>
+                <div style="width:100%;height:0px" class="faq6_answer">
+                  <div class="margin-bottom margin-small">
+                    <div class="max-width-large">
+                      <p>Once you’ve booked your disabled ticket, simply bring your ticket along with proof along with you to the aquarium on the day and we can print off your free carer ticket.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="faq6_accordion move-up">
+                <div data-w-id="87f6b618-2f27-0afc-24d4-ccdc0be13606" class="faqs-open">
+                  <h3>I have Ticket Agent vouchers, do I need to book?</h3><img src="images/arrow-white.svg" loading="lazy" alt="arrow" class="faq6_icon">
+                  <div class="hr-container faqs">
+                    <div class="hr faqs"></div>
+                  </div>
+                </div>
+                <div style="width:100%;height:0px" class="faq6_answer">
+                  <div class="margin-bottom margin-small">
+                    <div class="max-width-large">
+                      <p>Visits cannot be booked in advance. If you have a ticket agent voucher, please check availability from our admissions desk on the day of your visit. Please present your online booking and paper ticket on arrival.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="faq6_accordion move-up">
+                <div data-w-id="1a454cd3-b9b2-ed80-a5ae-e80ee896cd41" class="faqs-open">
+                  <h3>Can I come in and out, can I stay all day?</h3><img src="images/arrow-white.svg" loading="lazy" alt="arrow" class="faq6_icon">
+                  <div class="hr-container faqs">
+                    <div class="hr faqs"></div>
+                  </div>
+                </div>
+                <div class="faq6_answer">
+                  <div class="margin-bottom margin-small">
+                    <div class="max-width-large">
+                      <p>Tickets are valid all day, if you would like to come in and out just keep your printed ticket/receipt and show this to the admissions team when you return.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="padding-costum1">
+      <div id="contact" class="container footer-container">
+        <div class="footer-top">
+          <div>
+            <p class="reduce-opacity">Come visit us:<span class="reduce-opacity"><br></span></p>
+            <p>Roosevelt Grove<br>Milwaukee, WI 53216 EUA</p>
+          </div>
+          <div class="navigation-footer">
+            <p class="reduce-opacity">Navigation:<span class="reduce-opacity"><br></span></p>
+            <a href="#about" class="footer-link-wrapper w-inline-block">
+              <div class="footer-link">About</div>
+            </a>
+            <a href="#activities" class="footer-link-wrapper w-inline-block">
+              <div class="footer-link">Activities</div>
+            </a>
+            <a href="#performance" class="footer-link-wrapper w-inline-block">
+              <div class="footer-link">Performance</div>
+            </a>
+            <a href="#sea-creatures" class="footer-link-wrapper w-inline-block">
+              <div class="footer-link">Sea Creatures</div>
+            </a>
+            <a href="#conservation" class="footer-link-wrapper w-inline-block">
+              <div class="footer-link">Conservation</div>
+            </a>
+            <a href="#contact" class="footer-link-wrapper w-inline-block">
+              <div class="footer-link">Contact</div>
+            </a>
+            <div class="w-embed">
+              <style>
+.footer-link {
+  position:relative;
+  overflow:hidden;
+  display: inline-block;
+}
+.footer-link::after {
+  content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+  height: 0.11vw;
+  background-color: #fff;
+  opacity: 1;
+	transition: opacity 300ms, transform 300ms;
+  opacity 1;
+	transform: translate3d(-100%, 0, 0);
+}
+.footer-link:hover::after,
+.footer-link:focus::after {
+	opacity: 1;
+	transform: translate3d(0, 0, 0);
+}
+body{
+	position: relative;
+}
+</style>
+            </div>
+          </div>
+        </div>
+        <div class="footer-middle">
+          <div class="div-block">
+            <p>Contact Us</p><img src="images/arrow-white.svg" loading="lazy" alt="arrow" class="contact-us-icon">
+          </div>
+          <p>hello@oceanariummilwaukee.com</p>
+        </div>
+        <div class="footer-bottom">
+          <p>2023 © Ocenarium Milwaukee, Lda. All rights reserved</p>
+          <p class="paragraph">Privacy Policy, Terms and Conditions and Cookies Policy</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=63dc10fc8a7ef25cc2814332" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <!-- global styles -->
+  <style>
+html, body {
+  overflow-x: clip;
+	position: relative;
+</style>
+  <!-- water effect -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery.ripples@0.6.3/dist/jquery.ripples.min.js"></script>
+  <script>
+$('.hero').ripples({
+	resolution: 512,
+	dropRadius: 20,
+	perturbance: 0.04,
+});
+</script>
+  <!-- ativities slide -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!--  Initialize Swiper  -->
+  <script>
+      var swiper = new Swiper("#activities-swiper", {
+          a11y: false,
+          grabCursor:true,
+          scrollbar: {
+    				el: '.swiper-scrollbar',
+    				draggable: true,
+  				},
+          navigation:{
+        	nextEl: "#right-button",
+          prevEl: "#left-button",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+         /* Return bullets as Numbers*/
+          renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + (index + 1) + "</span>";
+          },
+          },
+          breakpoints: {
+          	0: {
+            	 slidesPerView: 1.2,
+            },
+            478: {
+            	 slidesPerView: 1.4,
+            },
+            767: {
+            	slidesPerView: 2.25,
+            },
+            988: {
+            	slidesPerView: 2.8,
+              spaceBetween: 0,
+            },
+          },
+      });
+    </script>
+  <!-- ativities slide -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!--  Initialize Swiper  -->
+  <script>
+      var menu = ['Gaint Manta Ray', 'Rough-Toothed Dolphin', 'Starry Smooth-Hound Shark', 'Florida Manatee', 'Moon Jellyfish',]
+      var swiper = new Swiper("#species", {
+          a11y: false,
+          grabCursor:true,
+          scrollbar: {
+    				el: '.swiper-scrollbar',
+    				draggable: true,
+  				},
+          navigation:{
+        	nextEl: "#right-button",
+          prevEl: "#left-button",
+        },
+        breakpoints: {
+          	0: {
+            	 slidesPerView: 1,
+            },
+            767: {
+            	slidesPerView: 1,
+            },
+            988: {
+            	slidesPerView: 1,
+              spaceBetween: 0,
+            },
+          },
+        pagination: {
+      		el: '.swiper-pagination',
+					clickable: true,
+        	renderBullet: function (index, className) {
+          	return '<span class="' + className + '">' + (menu[index]) + '</span>';
+        	},
+    		},
+      });
+    </script>
+  <!-- globe -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r125/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@finsweet/3dglobes@1/OrbitControls.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@finsweet/3dglobes@1/FsGlobe.min.js"></script>
+  <!-- background gradient animation -->
+  <!-- 
+<script>
+var colors = new Array(  
+  [30,122,151],
+  [25,98,133],
+  [20,74,115],
+  [15,53,99],
+  [10,28,79],
+  [4,3,61]);
+var step = 0;
+//color table indices for: 
+// current color left
+// next color left
+// current color right
+// next color right
+var colorIndices = [0,1,2,3];
+//transition speed
+var gradientSpeed = 0.002;
+function updateGradient()
+{
+  if ( $===undefined ) return;
+var c0_0 = colors[colorIndices[0]];
+var c0_1 = colors[colorIndices[1]];
+var c1_0 = colors[colorIndices[2]];
+var c1_1 = colors[colorIndices[3]];
+var istep = 1 - step;
+var r1 = Math.round(istep * c0_0[0] + step * c0_1[0]);
+var g1 = Math.round(istep * c0_0[1] + step * c0_1[1]);
+var b1 = Math.round(istep * c0_0[2] + step * c0_1[2]);
+var color1 = "rgb("+r1+","+g1+","+b1+")";
+var r2 = Math.round(istep * c1_0[0] + step * c1_1[0]);
+var g2 = Math.round(istep * c1_0[1] + step * c1_1[1]);
+var b2 = Math.round(istep * c1_0[2] + step * c1_1[2]);
+var color2 = "rgb("+r2+","+g2+","+b2+")";
+ $('#gradient').css({
+   background: "-webkit-gradient(linear, left top, right top, from("+color1+"), to("+color2+"))"}).css({
+    background: "-moz-linear-gradient(left, "+color1+" 0%, "+color2+" 100%)"});
+  step += gradientSpeed;
+  if ( step >= 1 )
+  {
+    step %= 1;
+    colorIndices[0] = colorIndices[1];
+    colorIndices[2] = colorIndices[3];
+    //pick two new target color indices
+    //do not pick the same as the current one
+    colorIndices[1] = ( colorIndices[1] + Math.floor( 1 + Math.random() * (colors.length - 1))) % colors.length;
+    colorIndices[3] = ( colorIndices[3] + Math.floor( 1 + Math.random() * (colors.length - 1))) % colors.length;
+  }
+}
+setInterval(updateGradient,10);
+</script> -->
+</body>
+</html>
